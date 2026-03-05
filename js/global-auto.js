@@ -1,5 +1,6 @@
 const criarBotaoVoltar = () => {
 
+    const elementoRef = document.getElementById('resultSection');
     const btnVoltar = document.createElement('button');
 
     btnVoltar.innerText = 'Voltar';
@@ -9,7 +10,7 @@ const criarBotaoVoltar = () => {
         window.location.href = '../index.html'
     });
 
-    document.body.appendChild(btnVoltar);
+    elementoRef.insertAdjacentElement('afterend', btnVoltar);
 
 };
 
