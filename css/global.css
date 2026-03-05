@@ -55,3 +55,8 @@ button:hover{
     transform: translateY(-2px);
     box-shadow: 0 10px 15px -3px white;
 }
+
+.btn-navegacao{
+    background-color: yellow;
+    color: black;
+}
