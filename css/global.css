@@ -2,9 +2,14 @@
     --primary-color: #6366f1;
     --primary-hover: #4f46e5;
     --bg-color: #f8fafc;
+    --bg-color-dark: black;
     --text-color: #1e293b;
+    --text-color-dark: white;
+    --primary-color-dark: #46e569;
+    --primary-hover-dark: #17bb3b;
     --white: #ffffff;
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px;
+    --shadow-dark: 0 4px 6px -1px rgba(80, 77, 77, 0.1), 0 2px 4px;
     --radius: 8px;
     --font-main: "Montserrat", sans-serif;
 }
@@ -28,6 +33,11 @@ body{
     text-align: center;
 }
 
+body.dark{
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
 .project__header h1 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -45,7 +55,6 @@ button{
     font-weight: 600;
     border-radius: var(--radius);
     cursor: pointer;
-    box-shadow: var(--shadow);
     transition: all 0.3 ease;
 }
 
@@ -55,3 +64,31 @@ button:hover{
     transform: translateY(-2px);
     box-shadow: 0 10px 15px -3px white;
 }
+
+.btn-navegacao{
+    background-color: var(--primary-color);
+}
+
+body.dark .btn-navegacao{
+    background-color: var(--primary-color-dark);
+}
+
+body.dark .project__header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color-dark);
+}
+
+body.dark .project__button-group input[type="button"],
+button{
+    background-color: var(--primary-color-dark);
+}
+
+body.dark .project__button-group input[type="button"]:hover,
+button:hover{
+    background-color: var(--primary-hover-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px -3px rgb(91, 211, 55);
+}
+
+
